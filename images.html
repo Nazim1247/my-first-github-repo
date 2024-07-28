@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images style</title>
+
+    <style>
+        .img{
+            width: 400px;
+            height: 300px;
+        }
+        .container-your-destination{
+            /* justify-content: center; */
+            /* align-items: center; */
+            text-align: center;
+        }
+        .row-1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .counrey-card{
+            position: relative;
+        }
+        .country{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            background-color: rgb(194, 190, 190);
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .img-style{
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            padding: 2px 5px;
+            border-radius: 5px;
+            
+        }
+        .img-size{
+            width: 50%;
+            height: 50%;
+            
+        }
+        @media screen and (max-width: 576px) {
+            .row-1{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+            
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <section class="container-your-destination">
+        <h3>choose your destination</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur enim ratione quaerat amet, atque alias eveniet maiores labore aut modi harum ducimus error commodi fugiat. Quasi id dolores molestiae similique.</p>
+        <div class="row-1">
+            <div class="counrey-card">
+                <img class="img" src="images/A.jpg" alt="">
+                <p class="country">Maloshia</p>
+            </div>
+            <div class="counrey-card">
+                <img class="img" src="images/B.jpg" alt="">
+                <p class="country">Indonashia</p>
+            </div>
+            <div class="counrey-card">
+                <img class="img" src="images/C.jpg" alt="">
+                <p class="country">Japan</p>
+            </div>
+        </div>
+
+    </section>
+    <div class="img-style">
+        <img class="img-size" src="images/A.jpg" alt="">
+        <p class="image">Maloshia</p>
+    </div>
+</body>
+</html>

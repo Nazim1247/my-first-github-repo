@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness footer</title>
+    <style>
+        .img-title{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .img{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .img-1{
+            width: 50%;
+            height: 50%;
+            border: 1px solid tomato;
+            border-radius: 100px;
+        }
+        .img-div{
+            text-align: center;
+        }
+        .section{
+            background-color: rgb(231, 226, 226);
+            margin-bottom: 20px;
+        }
+        .section-1{
+            display: flex;
+            justify-content: center;
+            margin: 20px 200px;
+            gap: 100px;
+            padding-bottom: 20px;
+        }
+        
+        table{
+            border-collapse: collapse;
+           width: 500px;
+           height: 150px;
+            margin-bottom: 20px;
+            /* margin-left: 50px; */
+            /* text-align: center; */
+           
+        }
+        td{
+            border: 1px solid black;
+            padding-left: 20px;
+        }
+        .th{
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .bmi{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* width: 50%; */
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .bmi-1{
+            width: 430px;
+        }
+        .button{
+            background-color: tomato;
+            border-radius: 10px;
+            width: 120px;
+            border: none;
+            margin-top: 10px;
+            color: white;
+            font-weight: bold;
+            padding: 2px 5px;
+        }
+
+        .footer-style{
+            background-color: rgb(244, 240, 240);
+            padding-bottom: 20px;
+        }
+       
+        .footer{
+            /* display: grid;
+            grid-template-columns: repeat(3, 1fr); */
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .footer-1{
+            width: 250px;
+        }
+        .italic{
+            font-style: italic;
+            color: tomato;
+            /* font-weight: bold;
+            font-size: 30px; */
+        }
+        .footer-2{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0px 100px;
+            /* display: flex;
+            justify-content: space-between; */
+        }
+        .footer-2 a{
+           text-decoration: none;
+           color: black;
+           margin-bottom: 10px;
+        }
+
+        .color{
+        background-color: blue;
+        }
+
+        .reserved{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            /* margin-bottom: 10px; */
+        }
+        @media screen and (max-width: 576px) {
+            .img{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .img-1{
+            border-radius: 100px;
+            width: 25%;
+            height: 50%;
+        }
+
+        .section-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px 20px;
+            gap: 50px;
+        }
+        table{
+            width: 100%;
+        }
+
+        .footer{   
+            display: flex;
+            flex-direction: column; 
+            margin-left: 20px; 
+        }
+        .footer-2{
+            margin: 0px 0px;
+        }
+        .reserved{
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="img-title">
+        <h3>change your habits</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolorem!</p>
+        </div>
+        <div class="img">
+            <div class="img-div">
+                <img class="img-1" src="images/hardy.png" alt="">
+                <h4>Master</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eaque?</p>
+            </div>
+            <div class="img-div">
+                <img class="img-1" src="images/hardy.png" alt="">
+                <h4>Master</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eaque?</p>
+            </div>
+            <div class="img-div">
+                <img class="img-1" src="images/hardy.png" alt="">
+                <h4>Master</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eaque?</p>
+            </div>
+            <div class="img-div">
+                <img class="img-1" src="images/hardy.png" alt="">
+                <h4>Master</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eaque?</p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-1">
+            <div>
+                <h3>BMI Calculator chat</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td class="th">BMI</td>
+                            <td class="th">weight Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5-24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0-29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0-and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="">
+                <h3>Calculate your BMI</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi praesentium id! Veritatis repellat et sequi consequuntur quae doloribus repellendus.</p>
+                <form action="">
+                    <div class="bmi">
+                    <input type="text" placeholder="Height/cm">
+                    <input type="text" placeholder="Weight/kg">
+                    <input type="text" placeholder="Age">
+                    <input type="text" placeholder="Sex">
+                    </div>
+                    <div>
+                        <input class="bmi-1" type="text" placeholder="Select an activity factor">
+                        <button class="button">Calculate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-style">
+        <div class="footer">
+            <div class="footer-1">
+                <h2 class="italic">Fitness</h2>
+                <p id="footer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, officia.</p>
+            </div>    
+            <div class="footer-2">
+                <h4>Get Started</h4>
+                <a href="">fitness</a>
+                <a href="">fitness</a>
+                <a href="">fitness</a>
+                <a href="">fitness</a>
+            </div>
+            <div class="footer-2">
+                <h4>Get Started</h4>
+                <a href="">fitness</a>
+                <a href="">fitness</a>
+                <a href="">fitness</a>
+                <a href="">fitness</a>
+            </div>
+        </div>
+
+        <div class="color"></div>
+
+        <div class="reserved">
+            all right reserved @fitness 2024
+        </div>
+    </footer>
+</body>
+</html>

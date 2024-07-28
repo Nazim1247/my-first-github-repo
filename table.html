@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        .form{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 50%;
+            gap: 10px;
+        }
+        .form-1{
+            width: 600px;
+            height: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+            
+        .form-1{
+            width: 350px;
+            height: 20px;
+            margin-top: 10px;
+        }       
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My Table</h1>
+    <table>
+        <caption>Employee Salary Data</caption>
+        <thead>
+            <tr>
+                <th>No:</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>bill gast</td>
+                <td>you tube</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>bill gast</td>
+                <td>you tube</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>bill gast</td>
+                <td>you tube</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>bill gast</td>
+                <td>you tube</td>
+                <td>$1000</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Employee 4</td>
+            </tr>
+        </tfoot>
+    </table>
+    <ul>
+        <li>table: table</li>
+        <li>table head: thead</li>
+        <li>table body: tbody</li>
+        <li>table foot: tfoot</li>
+        <li>table row: tr</li>
+        <li>table data or table cell: td</li>
+        <li>table head data: th</li>
+        <li>upore, caption</li>
+        <li>nice, colspan</li>
+    </ul>
+    </section>
+
+    <section>
+        <h1>My Form</h1>
+    <form>
+        <div class="form">
+            <input type="text" placeholder="height">
+        <input type="text" placeholder="height">
+        <input type="text" placeholder="height">
+        <select name="" id="">
+            <option value="width">width</option>
+        </select>
+        </div>
+        <div>
+            <select class="form-1" name="" id="">
+                <option value="width">width</option>
+            </select>
+        </div>
+    </form>
+    </section>
+
+</body>
+</html>

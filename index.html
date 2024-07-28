@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Collage</title>
+    <style>
+        /* nav style */
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-item{
+            margin-left: 20px;
+        }
+        .nav-item-2{
+            margin-right: 20px;
+        }
+        .item-3{
+            background-color: tomato;
+            padding: 2px;
+            border-radius: 10px;
+            font-size: larger;
+            color: white; 
+        }
+
+        /* banner style */
+
+        .our-country{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* gap: 100px; */
+            /* text-align: center; */
+            margin-left: 30px;
+        }
+        .img-style{
+            width: 50%;
+            height: 50%;
+            margin-left: 120px;
+        }
+        
+
+        .image{
+            /* margin-left: 200px; */
+        }
+        .Country-menu{
+            font-size:x-large;
+            /* width: 80%; */
+        }
+        .Country-ditails{
+            /* width: 80%; */
+            color: darkgrey;
+        }
+        .enjoy-style{
+            font-style: italic;
+            color: rgb(111, 104, 104);
+            font-size: x-large;
+        }
+        .item-3{
+            border: none;
+        }
+        .button-style{
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        /* country style  */
+
+        .country-img{
+            display: flex;
+        }
+        .country-style{
+            width: 400px;
+            height: 250px;
+            margin: 5px 5px;
+        }
+
+        /* main section */
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .container > div{
+            flex: 1;
+        }
+        .content{
+            height: calc( (100% - 5px)/2);
+        }
+        .box-collage{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+                height: auto;
+            }
+            .box-collage{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .our-country{
+                display: flex;
+                flex-direction: column;
+            }
+            .country-img{
+            display: flex;
+            flex-direction: column;
+        }
+        .title-style{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .img-style{
+            margin: 5px 50px;
+        }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+                flex-direction: column;
+                height: auto;
+            }
+            .box-collage{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-title">
+            <a class="nav-item" href="">Home</a>
+        <a class="nav-item" href="">Profile</a>
+        <a class="nav-item" href="">Blog</a>
+        <a class="nav-item item-3" href="">About</a>
+        </div>
+        <div>
+            <a class="nav-item-2" href="">Login</a>
+        </div>
+    </nav>
+    <section class="our-country">
+        <div class="title-style">
+            <h1 class="Country-menu">Visit our Country and <span class="enjoy-style">enjoy</span> the life</h1>
+        <p class="Country-ditails">Our Country is very beautiful so look our village and city and reaver atc.</p>
+        <button class="item-3">Enjoy the Moment</button>
+        <button class="button-style">Lat's go to city</button>
+        </div>
+        <div class="image">
+            <img class="img-style" src="images/hardy.png" alt="">
+        </div>
+    </section>
+
+    <section class="">
+        <div class="country-img">
+            <img class="country-style" src="images/A.jpg" alt="">
+            <img class="country-style" src="images/B.jpg" alt="">
+            <img class="country-style" src="images/C.jpg" alt="">
+        </div>
+        <div class="country-img">
+            <img class="country-style" src="images/A.jpg" alt="">
+            <img class="country-style" src="images/B.jpg" alt="">
+            <img class="country-style" src="images/C.jpg" alt="">
+        </div>
+        <div class="country-img">
+            <img class="country-style" src="images/A.jpg" alt="">
+            <img class="country-style" src="images/B.jpg" alt="">
+            <img class="country-style" src="images/C.jpg" alt="">
+        </div>
+        
+    </section>
+    <section>
+    <h1>My Picture Collage</h1>
+    <img src="images/A.jpg" alt="">
+    
+        <div class="container">
+            <div><img src="images/B.jpg" alt=""></div>
+    <div><img src="images/C.jpg" alt=""></div>
+    <div class="content"><img src="images/D.jpg" alt="">
+    <img src="images/E.jpg" alt=""></div>
+        </div>
+        <div class="container">
+            <div>
+                <img src="images/F.jpg" alt="">
+            </div>
+            <div class="box-collage">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            
+            <div><img src="images/H.jpg" alt=""></div>
+        </div>
+    
+    </section>
+</body>
+</html>
